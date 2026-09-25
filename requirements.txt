@@ -1,3 +1,2 @@
-graphics==1.0
 numpy==1.19.5
 pwinput==1.0.2

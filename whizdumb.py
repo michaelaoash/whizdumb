@@ -137,10 +137,10 @@ class Question:
                     second_howMuch = eval(second_howMuch)
                     while second_howMuch > player.points:
                         second_howMuch = eval(input("sorry, you may not bet more than what you have. please enter your bet: "))
-                        while not howMuch.isnumeric():
-                            howMuch = input("sorry, please enter an amount you would like to bet: ")
-                        howMuch=eval(howMuch)
-                    bet = player.placeBet(howMuch, chosenAnswer,
+                        while not second_howMuch.isnumeric():
+                            second_howMuch = input("sorry, please enter an amount you would like to bet: ")
+                        second_howMuch=eval(second_howMuch)
+                    bet = player.placeBet(second_howMuch, chosenAnswer,
                                           int(bettingTable[ord(second_answer_to_bet) - 97][1][0]))
                     betList.append(bet)
         bestGuess = self.identifyCorrectResponse(self.list_to_bet)
